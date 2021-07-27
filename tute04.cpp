@@ -16,14 +16,23 @@ Do not modify the main function.*/
 long Factorial(int no);
 long nCr(int n, int r);
 
-int main() {
-  int n, r;
+void nCr (long nCr);
+
+int main(){
+
+  int n, r,nCr;
+
   std::cout << "Enter a value for n ";
   std::cin >> n;
   std::cout << "Enter a value for r ";
   std::cin >> r;
-  std::cout << "nCr = ";
-  std::cout << nCr(n,r);
+
+   nCr =  n! / [r! * (n-r)!] ;
+
+  std::cout << "nCr = "<<nCr;
+  
+
   std::cout << std::endl;
-  return 0;
+  
 }
+
